@@ -1,0 +1,19 @@
+{
+    "username": "clay.stup.massedit@gmail.com", 
+    "environment": "production", 
+    "project_name": "MassEdit", 
+    "workspace": "/users/cs/Documents/Salesforce", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "9M5JLA5H0R2RYOX7N0UCPNLSSC5G1T9I", 
+    "metadata_container": "1dco0000000DmAiAAK", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}

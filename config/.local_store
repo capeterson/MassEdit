@@ -1,0 +1,41 @@
+{
+    "MassEditController.cls": {
+        "createdById": "005o0000000tq1DAAQ", 
+        "createdByName": "Clayton Stupi", 
+        "createdDate": "2014-08-12 12:17:52", 
+        "fileName": "unpackaged/classes/MassEditController.cls", 
+        "fullName": "MassEditController", 
+        "id": "01po0000001pIadAAE", 
+        "lastModifiedById": "005o0000000tq1DAAQ", 
+        "lastModifiedByName": "Clayton Stupi", 
+        "lastModifiedDate": "2014-08-21 15:03:05", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "MassEditPage.page": {
+        "createdById": "005o0000000tq1DAAQ", 
+        "createdByName": "Clayton Stupi", 
+        "createdDate": "2014-08-10 15:48:11", 
+        "fileName": "unpackaged/pages/MassEditPage.page", 
+        "fullName": "MassEditPage", 
+        "id": "066o00000018w3WAAQ", 
+        "lastModifiedById": "005o0000000tq1DAAQ", 
+        "lastModifiedByName": "Clayton Stupi", 
+        "lastModifiedDate": "2014-08-21 15:10:11", 
+        "mmState": "clean", 
+        "type": "ApexPage"
+    }, 
+    "MassEditUtility.cls": {
+        "createdById": "005o0000000tq1DAAQ", 
+        "createdByName": "Clayton Stupi", 
+        "createdDate": "2014-08-10 14:34:55", 
+        "fileName": "unpackaged/classes/MassEditUtility.cls", 
+        "fullName": "MassEditUtility", 
+        "id": "01po0000001fUdXAAU", 
+        "lastModifiedById": "005o0000000tq1DAAQ", 
+        "lastModifiedByName": "Clayton Stupi", 
+        "lastModifiedDate": "2014-08-21 15:03:17", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }
+}

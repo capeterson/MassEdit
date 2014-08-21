@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pageBloc",
+				"apex:pageBlockButtons"
+			],
+			[
+				"ass",
+				"assert()"
+			],
+			[
+				"pageMessa",
+				"apex:pageMessages"
+			],
+			[
+				"stop",
+				"StopTime__c"
+			],
+			[
+				"n",
+				"Name"
+			],
+			[
+				"active",
+				"activeEntry"
+			],
+			[
+				"WorkEnt",
+				"WorkEntry__c"
+			],
+			[
+				"Workentry",
+				"WorkEntry__c"
+			],
+			[
+				"acti",
+				"activeEntry"
+			],
+			[
+				"calc",
+				"PUBLIC calculateTimeEntry(LIST entries) 	void"
+			],
+			[
+				"Time",
+				"TimeTrackerTriggerHandler	[Custom Apex Class]"
+			],
+			[
+				"pro",
+				"Project__r"
+			],
+			[
+				"r",
+				"Rate__c"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 539.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cs/Documents/Salesforce/ProjectTimer/src/classes/CMonitorSFService.cls",
+		"/Users/cs/Documents/Salesforce/ProjectTimer/src/classes/CMonitorSFService.cls-meta.xml",
+		"/Users/cs/Library/Application Support/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
+		"/Users/cs/Library/Application Support/Sublime Text 3/Packages/MavensMate/mavensmate.sublime-settings",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/pages/CTimerPage.page-meta.xml",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/ThinkingInApex.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/TestConcurrency.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/TestForManaged.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/TestConcurrency.cls-meta.xml",
+		"/users/cs/Documents/Salesforce/ProjectTimer/ProjectTimer.sublime-project",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/TimeTrackerTriggerHandler.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/ThinkingInApex.cls-meta.xml",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/Concurrency1.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/WorkEntryTest.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/triggers/WorkEntryTrigger.trigger",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/CTimerController.cls",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/pages/Alarms.page",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/CTimerController.cls-meta.xml",
+		"/users/cs/Documents/Salesforce/ProjectTimer/src/classes/AlertController.cls"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"String",
+			"form",
+			"void",
+			"tooling API",
+			"stop",
+			"project__c"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 166.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "MassEdit.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"timerpage",
+				"src/pages/CTimerPage.page-meta.xml"
+			],
+			[
+				"ctimerp",
+				"src/pages/CTimerPage.page"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

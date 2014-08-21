@@ -1,0 +1,75 @@
+<apex:page controller="MassEditController">
+   <apex:form >
+      	<apex:pageBlock mode="edit" id="block">
+    	<apex:outputText >Select object and add fields to modify. This will make changes to ALL objects if no filter is specified</apex:outputText>
+      	<apex:pageBlockSection >
+    		<apex:pageBlockSectionItem >
+     			<apex:outputLabel for="type_select">FROM </apex:outputLabel>
+        		<apex:selectList required="true" id="type_select" value="{!selectedObj}" size="1">
+              		<apex:actionSupport event="onchange" action="{!getFields}" rerender="field_selects" status="status"/>
+          			<apex:selectOptions value="{!objNames}"/>
+      			</apex:selectList>
+    		</apex:pageBlockSectionItem>
+    		<apex:pageBlockSectionItem >
+        		<apex:outputLabel for="searchText">WHERE</apex:outputLabel>
+            	<apex:panelGroup >
+                	<apex:inputText id="searchText" value="{!searchText}"/>
+                	<apex:commandButton value="Filter!" action="{!doSearch}" 
+                                      rerender="results" status="status"/>
+            	</apex:panelGroup>
+        	</apex:pageBlockSectionItem>
+    	</apex:pageBlockSection>
+    <apex:pageBlockSection id="field_selects">
+      <apex:pageBlockSectionItem >
+        <apex:selectList value="{!selectedField}" size="1">
+            <apex:selectOptions value="{!fieldNames}"/>
+        </apex:selectList>
+        <apex:commandButton value="Add Field" reRender="field_table" status="status" action="{!addSelectedField}"/>
+      </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+        <apex:actionStatus id="status" startText="requesting..."/>
+<apex:pageBlock >
+    <apex:pageBlockSection id="field_table" columns="2">
+        <apex:repeat value="{!toUpdate_fields}" var="key">
+          <apex:pageBlockSectionItem >
+            <apex:outputText value="{!key}"/>
+          </apex:pageBlockSectionItem>
+          <apex:pageBlockSectionItem >
+            <apex:inputField value="{!stub_obj[key]}"/>
+            <apex:commandButton value="Remove" reRender="field_table" status="status" action="{!removeSelectedField}">
+            	<apex:param name="removeId" value="{!key}" assignTo="{!removeField}" />
+        	</apex:commandButton>
+          </apex:pageBlockSectionItem>
+        </apex:repeat> 
+    </apex:pageBlockSection>
+     <apex:commandButton value="Submit Updates" reRender="results" status="status" action="{!doUpdate}" />
+    </apex:pageBlock>
+   </apex:pageBlock>
+    <apex:pageBlock id="results">
+        <apex:pageBlockSection title="To Be Modified" columns="1">
+           <apex:pageBlockTable value="{!results}" var="results"
+                               rendered="{!NOT(ISNULL(results))}">
+                <apex:column >
+                 	<apex:facet name="header">
+                 		<apex:inputCheckbox value="{!all_selected}">
+                 			<apex:actionSupport event="onchange" action="{!doSelectAll}" reRender="results"/>
+                 		</apex:inputCheckbox>
+                 	</apex:facet>
+                  	<apex:repeat var="o" value="{!results}">
+                    	<apex:inputCheckbox value="{!o.selected}"/>
+                  	</apex:repeat>
+                </apex:column>               
+                <apex:repeat var="r" value="{!toUpdate_fields}">
+                  <apex:column headerValue="{!r}">
+                  <apex:repeat var="o" value="{!results}">
+                    <apex:outputField value="{!o.o[r]}"/>
+                  </apex:repeat>
+                  </apex:column>
+                </apex:repeat>
+           </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection >
+        </apex:pageBlockSection>
+      </apex:pageBlock> 
+  </apex:form>
+</apex:page>
