@@ -14,35 +14,35 @@ Executes update
 
 
 To Do:
-Remove template code -- FFS!
+Add tests
 Make UI more intuitive - Currently confusing for order things get done
 Clean up code
 
 Add option for bulk update 
 */
-    String searchText;
+    String searchText {get; set;} 
 
     public List<SelectableObject> results {get; set;}
     public SObject stub_obj {get; set;}
 
-// Map os string and sobject types since it was having trouble displaying sobjecttype names
+    // Map os string and sobject types since it was having trouble displaying sobjecttype names
     public Map<String, String> objNames {get; set;}
     public String selectedObj {get; set;}
 
-// Do the same thing with fields
+    // Do the same thing with fields
     public Map<String, String> fieldNames {get; set;}
     public List<String> listFieldNames {get; set;}
     public String selectedField {get; set;}
     public String removeField {get; set;}
-// Keep track of what fields need to be updated
-// Needs to be looked at (either remove it or make it a list)
+    // Keep track of what fields need to be updated
+    // Needs to be looked at (either remove it or make it a list)
     public List<String> toUpdate_fields {get; set;}
 
     public List<SelectableObject> filteredObjects;
     public Boolean all_selected {get; set;}
 
 
-// Initialize all the things
+    // Initialize all the things
     public MassEditController() 
     {
         objNames = MassEditUtility.getObjectNames();
@@ -52,14 +52,6 @@ Add option for bulk update
         all_selected = true;
     }
 
-    // Place holders
-    public String getSearchText() {
-        return searchText;
-    }
-
-    public void setSearchText(String s) {
-        searchText = s;
-    }
 
     // Add selected field to table of fields to update 
     public PageReference addSelectedField()
