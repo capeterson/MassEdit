@@ -20,7 +20,7 @@ Clean up code
 
 Add option for bulk update 
 */
-    String searchText {get; set;} 
+    public String searchText {get; set;} 
 
     public List<SelectableObject> results {get; set;}
     public SObject stub_obj {get; set;}
