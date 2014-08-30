@@ -8,7 +8,7 @@ Gets list of all objects
 Gets list of fields
 Remove fields that have been added
 Displays field in table with corresponding type
-Add ability to only update specific items in bulk (IE run query and update those items at once)
+ability to only update specific items in bulk (IE run query and update those items at once)
 Executes update
 
 
