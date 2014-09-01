@@ -1,6 +1,21 @@
 public with sharing class MassEditSObjectSelectionController {
-	public String targetType {get; set;} //TODO: validate sobject type is real and editable in setter
+	public String targetType {
+		get; 
+		set{
+			if(globalDescribe.containsKey(value)){
+				targetType = value;
+			}else{
+				ApexPages.addMessage( 
+					new ApexPages.Message( 
+						ApexPages.Severity.ERROR,
+						'"'+value+'" is not a valid SObjectType.'
+					)
+				);
+			}
+		}
+	}
 	private final String LABEL_TEMPLATE = '{0} ({1})';
+	private final Map<String,Schema.SObjectType> globalDescribe = Schema.getGlobalDescribe();
 
 	public MassEditSObjectSelectionController() {
 		
