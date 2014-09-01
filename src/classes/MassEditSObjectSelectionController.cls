@@ -26,7 +26,7 @@ public with sharing class MassEditSObjectSelectionController {
 	**/
 	public List<SelectOption> getEditableTypes(){
 		List<SelectOption> result = new List<SelectOption>();
-		for(Schema.SObjectType objType: Schema.getGlobalDescribe().values() ) {
+		for(Schema.SObjectType objType: globalDescribe.values() ) {
 			Schema.DescribeSObjectResult describe = objType.getDescribe();
 			if(describe.isUpdateable() && describe.isQueryable() && !describe.isCustomSetting()){
 				result.add( 
