@@ -42,9 +42,19 @@ public with sharing class MassEditSObjectSelectionController {
 	}
 
 	public PageReference redirect(){
-		PageReference result = Page.MassEditPage;
-		result.setRedirect(true);
-		result.getParameters().put('type', targetType);
-		return result;
+		if(String.isBlank(targetType)){
+			ApexPages.addMessage( 
+				new ApexPages.Message( 
+					ApexPages.Severity.ERROR,
+					'An SObject Type must be selected.'
+				)
+			);
+			return null;
+		}else{
+			PageReference result = Page.MassEditPage;
+			result.setRedirect(true);
+			result.getParameters().put('type', targetType);
+			return result;
+		}
 	}
 }
