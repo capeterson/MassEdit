@@ -1,0 +1,18 @@
+<apex:page showHeader="true" sidebar="true" controller="MassEditSObjectSelectionController">
+	<apex:form>
+		<apex:pageMessage strength="3" severity="Info" title="Types that you are unable to update, as well as custom setting types, are automatically hidden." />
+		<apex:pageBlock title="SObject Type Selection">
+			<apex:pageBlockButtons location="bottom">
+				<apex:commandButton value="Go!" action="{!redirect}" />
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection>
+				<apex:pageBlockSectionItem>
+					<apex:outputLabel value="SObject Type" />
+					<apex:selectList value="{!targetType}" multiselect="false" size="1">
+						<apex:selectOptions value="{!editableTypes}" />
+					</apex:selectList>
+				</apex:pageBlockSectionItem>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>
