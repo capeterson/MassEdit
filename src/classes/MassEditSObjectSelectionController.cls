@@ -3,7 +3,17 @@ public with sharing class MassEditSObjectSelectionController {
 		get; 
 		set{
 			if(globalDescribe.containsKey(value)){
-				targetType = value;
+				Schema.DescribeSObjectResult describe = globalDescribe.get(value).getDescribe();
+				if(describe.isUpdateable() && describe.isQueryable() && !describe.isCustomSetting()) {
+					targetType = value;
+				}else{
+					ApexPages.addMessage( 
+						new ApexPages.Message( 
+							ApexPages.Severity.ERROR,
+							'You do not have access to update '+describe.getLabel()
+						)
+					);
+				}
 			}else{
 				ApexPages.addMessage( 
 					new ApexPages.Message( 
