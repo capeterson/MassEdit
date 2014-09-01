@@ -14,6 +14,7 @@ private class MassEditTest {
         	obj.getDescribe().fields.getMap().keySet()));
             
 	}
+
 	// Test for updating all
 	@isTest static void testBasicUpdate()
 	{
@@ -37,10 +38,20 @@ private class MassEditTest {
 		m.getFields();
 		m.selectedField = 'Subject';
 		m.addSelectedField();
+		m.selectedField = 'description';
+		m.addSelectedField();
+		m.selectedField = 'status';
+		m.addSelectedField();
+		m.selectedField = 'id';
+		m.addSelectedField();
+		m.removeField = 'id';
+		m.removeSelectedField();
 		m.searchText = 'subject = \'testcase\'';
 		m.doSearch();
 		m.stub_obj.put('Subject','testFilterUpdate');
+		m.stub_obj.put('description', 'testdescription here');
 		m.doUpdate();
+		m.doSelectAll();
 		Case a = [SELECT subject FROM case WHERE subject LIKE 'testFilterUpdate' limit 1];
 		System.assert(a.subject.equals('testFilterUpdate'));
 	}

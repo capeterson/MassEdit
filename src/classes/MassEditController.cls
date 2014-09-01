@@ -77,7 +77,8 @@ Add option for bulk update
     }
 
     // Place holder / test -- Right now it queries all objects based on keyset of fields
-    public PageReference doSearch() {
+    public PageReference doSearch() 
+    {
         String query = 'Select ';
         List<String> keyset = new List<String>(fieldNames.keySet());
         for(Integer i = 0; i < keyset.size();i++)
@@ -158,10 +159,6 @@ Add option for bulk update
         public Boolean selected {get; set;}
         public SObject o {get; set;}
 
-        public SelectableObject(SObject o)
-        {
-            this.o = o;
-        }
         public SelectableObject(SObject o, Boolean t)
         {
             this.o = o;
