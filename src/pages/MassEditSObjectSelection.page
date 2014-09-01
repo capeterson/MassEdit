@@ -1,6 +1,7 @@
 <apex:page showHeader="true" sidebar="true" controller="MassEditSObjectSelectionController">
 	<apex:form>
 		<apex:pageMessage strength="3" severity="Info" title="Types that you are unable to update, as well as custom setting types, are automatically hidden." />
+		<apex:pageMessages />
 		<apex:pageBlock title="SObject Type Selection">
 			<apex:pageBlockButtons location="bottom">
 				<apex:commandButton value="Go!" action="{!redirect}" />
