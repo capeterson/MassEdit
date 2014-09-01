@@ -37,6 +37,7 @@ public with sharing class MassEditSObjectSelectionController {
 				);
 			}
 		}
+		result.sort();
 		return result;
 	}
 
