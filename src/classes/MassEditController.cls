@@ -1,25 +1,25 @@
 public class MassEditController {
-/*
-Mass Edit Controller
-
-Purpose: Update all records of an object with changes based on selected fields
-
-Current:
-Gets list of all objects
-Gets list of fields
-Remove fields that have been added
-Displays field in table with corresponding type
-Add ability to only update specific items in bulk (IE run query and update those items at once)
-Executes update
-
-
-To Do:
-Add tests
-Make UI more intuitive - Currently confusing for order things get done
-Clean up code
-
-Add option for bulk update 
-*/
+    /**
+     * Mass Edit Controller
+     * 
+     * Purpose: Update all records of an object with changes based on selected fields
+     * 
+     * Current:
+     * Gets list of all objects
+     * Gets list of fields
+     * Remove fields that have been added
+     * Displays field in table with corresponding type
+     * Add ability to only update specific items in bulk (IE run query and update those items at once)
+     * Executes update
+     * 
+     * 
+     * To Do:
+     * Add tests
+     * Make UI more intuitive - Currently confusing for order things get done
+     * Clean up code
+     * 
+     * Add option for bulk update 
+    **/
     public String searchText {get; set;} 
 
     public List<SelectableObject> results {get; set;}
